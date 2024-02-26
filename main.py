@@ -38,7 +38,7 @@ def save_characters(output_dir, characters):
 
 
 def extract_letters(image_path):
-    output_dir = 'letter_images'
+    output_dir = 'letter_images_10_pages'
     os.makedirs(output_dir, exist_ok=True)
     pages = cfp(image_path)
     print(f"Total pages: {len(pages)}")
@@ -56,5 +56,5 @@ def process_page(output_dir, page, page_num):
 
 
 if __name__ == "__main__":
-    pdf_path = 'torah1.pdf'
+    pdf_path = 'Sefer-Torah-Elihu-Shannon-2a.pdf'
     extract_letters(pdf_path)
